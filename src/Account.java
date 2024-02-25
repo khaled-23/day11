@@ -29,7 +29,7 @@ public class Account {
         return amount;
     }
     public int debit(int debit){
-        if(debit<getBalance()){
+        if(debit<=getBalance()){
             this.balance = this.balance-debit;
         }else System.out.println(this.name+ "doesn't have enough balance: "+ this.getBalance());
         return -debit;
